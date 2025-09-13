@@ -115,7 +115,7 @@ func main() {
 		return
 	}
 
-	fmt.Println("🔍 Checking for any LeetCode submission today...")
+	fmt.Println("Checking for any LeetCode submission today...")
 
 	for _, username := range friends {
 		solved, err := hasUserSolvedProblemToday(username)
@@ -125,9 +125,9 @@ func main() {
 		}
 
 		if solved {
-			fmt.Printf("✅ %s solved a problem today!\n", username)
+			fmt.Printf("%s solved a problem today!\n", username)
 		} else {
-			fmt.Printf("❌ %s has not solved a problem yet today.\n", username)
+			fmt.Printf("%s has not solved a problem yet today.\n", username)
 		}
 	}
 }
